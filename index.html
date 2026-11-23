@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huzaifa Academy | Official Documentary Cinema</title>
+  <meta name="description" content="Discover world mysteries, ancient civilizations, science documentaries, and cosmic enigmas in Urdu by Huzaifa Academy. Watch all 14 official documentaries.">
+  <meta name="keywords" content="Huzaifa Academy, YouTube, Urdu Documentary, Stonehenge Mystery, Great Pyramid, Titanic, Dinosaurs, Science, Mysteries">
+  <meta name="author" content="Huzaifa Academy">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Huzaifa Academy - World Mysteries in Urdu">
+  <meta property="og:description" content="Explore ancient secrets, science documentaries, space missions, and unsolved mysteries in easy Urdu.">
+  <meta property="og:image" content="https://yt3.googleusercontent.com/6CIoT-aucWhmPpF3F9vKMehSKp-N5BsxsSiS1-81GlQTg4oJVqJIlBC1tgIUE7mIwsZoPBXXlQ=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj">
+  <meta property="og:url" content="https://www.youtube.com/@HuzaifaAcademy-z6m">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Visual Elements -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Custom Animated Logo -->
+      <a href="index.html" class="brand-logo-custom">
+        <div class="logo-badge-wrap">
+          <div class="logo-animated-ring"></div>
+          <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" alt="Huzaifa Academy Avatar" class="brand-avatar">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            Huzaifa Academy
+            <i class="fa-solid fa-circle-check brand-badge" title="Official Verified YouTube Channel"></i>
+          </span>
+          <span class="brand-tagline">Urdu Documentaries</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="studio.html" class="nav-link">Studio Player</a></li>
+        <li><a href="documentaries.html" class="nav-link">Documentaries</a></li>
+        <li><a href="wheel.html" class="nav-link">Mystery Wheel</a></li>
+        <li><a href="about.html" class="nav-link">About Channel</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button class="icon-action-btn" id="sound-toggle-btn" aria-label="Toggle sound feedback" title="Sound Effects">
+          <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="icon-action-btn" id="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Switch Theme">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+
+        <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-subscribe">
+          <i class="fa-solid fa-bell"></i>
+          <span>Subscribe</span>
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom: 10px;">
+      <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" style="width:40px; height:40px; border-radius:50%;" alt="Huzaifa">
+      <div>
+        <h4 style="font-size: 1.1rem; color:var(--heading-color);">Huzaifa Academy</h4>
+        <span style="font-size: 0.75rem; color:var(--text-muted);">@HuzaifaAcademy-z6m</span>
+      </div>
+    </div>
+    
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="studio.html" class="mobile-link">Studio Player</a></li>
+      <li><a href="documentaries.html" class="mobile-link">All Documentaries (14)</a></li>
+      <li><a href="wheel.html" class="mobile-link">Mystery Wheel</a></li>
+      <li><a href="about.html" class="mobile-link">About Channel</a></li>
+    </ul>
+
+    <!-- Mobile Theme Switch -->
+    <div class="mobile-theme-row">
+      <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">Appearance</span>
+      <button class="mobile-theme-btn" id="theme-toggle-mobile" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" id="theme-icon-mobile"></i>
+        <span id="theme-text-mobile">Light Mode</span>
+      </button>
+    </div>
+
+    <div style="margin-top: auto;">
+      <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-subscribe" style="width: 100%; justify-content: center;">
+        <i class="fa-solid fa-bell"></i>
+        <span>Subscribe on YouTube</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="home">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container">
+      
+      <!-- Channel Banner Display -->
+      <div class="hero-banner-wrap">
+        <img src="https://yt3.googleusercontent.com/6CIoT-aucWhmPpF3F9vKMehSKp-N5BsxsSiS1-81GlQTg4oJVqJIlBC1tgIUE7mIwsZoPBXXlQ=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Huzaifa Academy Official Banner" class="hero-banner-img">
+        <div class="hero-banner-overlay"></div>
+      </div>
+
+      <!-- Hero Main Content Grid -->
+      <div class="hero-content">
+        <div class="hero-left">
+          
+          <div class="channel-pill-row">
+            <div class="channel-pill">
+              <i class="fa-brands fa-youtube"></i>
+              <span>Official Channel • @HuzaifaAcademy-z6m</span>
+            </div>
+            <div class="verified-pill">
+              <i class="fa-solid fa-certificate"></i>
+              <span>14 Full Documentaries</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Unraveling Earth's <span class="gradient-text">Greatest Mysteries</span> In <span class="highlight-cyan">Urdu</span>
+          </h1>
+
+          <!-- Typewriter Animated Subtitle -->
+          <div style="font-size: 1.25rem; font-weight: 700; color: var(--heading-color);">
+            Exploring: <span class="typewriter-wrapper"><span id="typewriter-text"></span><span class="typewriter-cursor"></span></span>
+          </div>
+
+          <p class="hero-subtitle">
+            Welcome to <strong>Huzaifa Academy</strong>. Embark on cinematic journeys across ancient civilizations, unsolved disappearances, prehistoric giants, and cutting-edge science — crafted specifically for curious minds.
+          </p>
+
+          <div class="hero-actions">
+            <a href="studio.html" class="btn-primary">
+              <i class="fa-solid fa-circle-play"></i>
+              <span>Watch in Studio Player</span>
+            </a>
+            <a href="documentaries.html" class="btn-secondary">
+              <i class="fa-solid fa-film"></i>
+              <span>Browse All 14 Documentaries</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Spotlight Premiere Card with Floating Badges -->
+        <div class="hero-right">
+          <div class="floating-hero-badge badge-float-1">
+            <i class="fa-solid fa-fire" style="color: var(--primary);"></i>
+            <span>Great Pyramid Construction Secrets</span>
+          </div>
+
+          <div class="floating-hero-badge badge-float-2">
+            <i class="fa-solid fa-monument" style="color: var(--secondary);"></i>
+            <span>5,000-Yr Stonehenge Enigma</span>
+          </div>
+
+          <div class="spotlight-card" id="featured-spotlight-card">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Channel Highlights Bar -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon icon-red">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-number" data-count="14">14</span>
+            <span class="stat-label">Full-Length Documentaries</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-cyan">
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-number">1080p</span>
+            <span class="stat-label">Full HD Cinematic Audio</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-gold">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Major Mystery Domains</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-purple">
+            <i class="fa-solid fa-language"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-number">100% Free</span>
+            <span class="stat-label">Urdu / Hindi Narration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Spotlight Cards Section -->
+  <section class="catalog-section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-label"><i class="fa-solid fa-star"></i> Featured Documentaries</span>
+          <h2 class="section-title">Popular Investigations</h2>
+          <p class="section-subtitle">
+            Start exploring with some of our most watched and discussed mysteries.
+          </p>
+        </div>
+        <div>
+          <a href="documentaries.html" class="btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+            <span>View All 14 Documentaries</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <!-- Card 1: Stonehenge -->
+        <article class="video-card">
+          <div class="card-thumb-wrap">
+            <a href="studio.html?v=2QiTjhlRGss">
+              <img src="https://i.ytimg.com/vi/2QiTjhlRGss/hq720.jpg" alt="Stonehenge Mystery" class="card-thumb-img" onerror="this.src='https://i.ytimg.com/vi/2QiTjhlRGss/hqdefault.jpg'">
+              <div class="card-play-overlay">
+                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <span class="card-badge-top badge-featured">LATEST PREMIERE</span>
+              <span class="card-duration-badge"><i class="fa-regular fa-clock"></i> 8:40</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span class="card-cat-tag">Ancient Mystery</span>
+              <span class="meta-dot"></span>
+              <span>Latest Release</span>
+            </div>
+            <h3 class="card-title">
+              <a href="studio.html?v=2QiTjhlRGss">What is This? 5,000 Years Old and Still a Mystery: What Is Stonehenge Hiding?</a>
+            </h3>
+            <p class="card-synopsis">
+              For over five millennia, the colossal monolithic stone circle of Stonehenge has stood silently in England, baffling historians, astronomers, and archaeologists alike.
+            </p>
+            <div class="card-footer">
+              <a href="studio.html?v=2QiTjhlRGss" class="btn-card-watch">
+                <i class="fa-solid fa-play"></i> Watch in Studio
+              </a>
+              <a href="https://www.youtube.com/watch?v=2QiTjhlRGss" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open on YouTube">
+                <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Great Pyramid -->
+        <article class="video-card">
+          <div class="card-thumb-wrap">
+            <a href="studio.html?v=jpKfWWI5cuA">
+              <img src="https://i.ytimg.com/vi/jpKfWWI5cuA/hq720.jpg" alt="Great Pyramid Mystery" class="card-thumb-img" onerror="this.src='https://i.ytimg.com/vi/jpKfWWI5cuA/hqdefault.jpg'">
+              <div class="card-play-overlay">
+                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <span class="card-badge-top badge-popular">MOST POPULAR</span>
+              <span class="card-duration-badge"><i class="fa-regular fa-clock"></i> 9:31</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span class="card-cat-tag">Ancient Mystery</span>
+              <span class="meta-dot"></span>
+              <span>Popular</span>
+            </div>
+            <h3 class="card-title">
+              <a href="studio.html?v=jpKfWWI5cuA">How the Great Pyramid Was REALLY Built: The Secret Nobody Can Fully Explain</a>
+            </h3>
+            <p class="card-synopsis">
+              With 2.3 million stone blocks perfectly aligned to true north with astronomical precision, modern engineers still puzzle over the construction techniques used 4,500 years ago.
+            </p>
+            <div class="card-footer">
+              <a href="studio.html?v=jpKfWWI5cuA" class="btn-card-watch">
+                <i class="fa-solid fa-play"></i> Watch in Studio
+              </a>
+              <a href="https://www.youtube.com/watch?v=jpKfWWI5cuA" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open on YouTube">
+                <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Titanic -->
+        <article class="video-card">
+          <div class="card-thumb-wrap">
+            <a href="studio.html?v=0QaKvYs_Nvk">
+              <img src="https://i.ytimg.com/vi/0QaKvYs_Nvk/hq720.jpg" alt="Titanic Real Story" class="card-thumb-img" onerror="this.src='https://i.ytimg.com/vi/0QaKvYs_Nvk/hqdefault.jpg'">
+              <div class="card-play-overlay">
+                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <span class="card-badge-top">POPULAR DOCUMENTARY</span>
+              <span class="card-duration-badge"><i class="fa-regular fa-clock"></i> 4:33</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span class="card-cat-tag">Disaster & Mystery</span>
+              <span class="meta-dot"></span>
+              <span>Maritime Disaster</span>
+            </div>
+            <h3 class="card-title">
+              <a href="studio.html?v=0QaKvYs_Nvk">Titanic: The Real Story of the Ship That Sank | Full Documentary in Urdu</a>
+            </h3>
+            <p class="card-synopsis">
+              On April 14, 1912, the world's most luxurious and allegedly 'unsinkable' passenger ocean liner collided with an iceberg. Discover the authentic tragedy detailed in Urdu.
+            </p>
+            <div class="card-footer">
+              <a href="studio.html?v=0QaKvYs_Nvk" class="btn-card-watch">
+                <i class="fa-solid fa-play"></i> Watch in Studio
+              </a>
+              <a href="https://www.youtube.com/watch?v=0QaKvYs_Nvk" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open on YouTube">
+                <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Preview Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="section-label"><i class="fa-solid fa-bullhorn"></i> Channel Mission</span>
+          <h2 class="section-title" style="margin-bottom: 18px;">Why Follow Huzaifa Academy?</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+            At <strong>Huzaifa Academy</strong>, our mission is to produce world-class educational documentaries in Urdu covering historical enigmas, scientific breakthroughs, ancient engineering marvels, and unexplained anomalies.
+          </p>
+          <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+            <a href="about.html" class="btn-primary">
+              <span>Read Full Channel Story</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="wheel.html" class="btn-secondary">
+              <i class="fa-solid fa-dice"></i>
+              <span>Try Mystery Wheel</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-box">
+            <div class="feature-icon-circle"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+            <h4>Thorough Research</h4>
+            <p>Every script is backed by historical records, archaeological findings, and verified scientific papers.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle"><i class="fa-solid fa-microphone-lines"></i></div>
+            <h4>Engaging Storytelling</h4>
+            <p>Narrated in clear, articulate Urdu designed to hold your attention from the first second to the final reveal.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle"><i class="fa-solid fa-globe"></i></div>
+            <h4>Global Curiosities</h4>
+            <p>From Stonehenge and Egypt to Titanic, Chernobyl, and outer space — covering the world's greatest stories.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h4>Educational Value</h4>
+            <p>Perfect for students, history buffs, science lovers, and curious viewers across all age groups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Promotional Call to Action Banner -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-card">
+        <div class="channel-pill">
+          <i class="fa-brands fa-youtube"></i>
+          <span>Join the Academy</span>
+        </div>
+        <h2 class="promo-title">Never Miss a World Mystery</h2>
+        <p class="promo-desc">
+          Subscribe to <strong>@HuzaifaAcademy-z6m</strong> on YouTube. Hit the bell notification to get immediate access when our next investigative documentary drops!
+        </p>
+        <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="subscribe-big-btn">
+          <i class="fa-brands fa-youtube" style="font-size: 1.4rem;"></i>
+          <span>Subscribe to Huzaifa Academy</span>
+        </a>
+
+        <!-- Quick email newsletter notification -->
+        <form id="newsletter-form" style="display:flex; gap:10px; margin-top:16px; width:100%; max-width:440px;">
+          <input type="email" id="newsletter-email" placeholder="Enter your email for new documentary alerts..." required style="flex:1; background:rgba(0,0,0,0.6); border:1px solid var(--border-subtle); color:#fff; padding:12px 18px; border-radius:var(--radius-full); font-size:0.88rem; outline:none;">
+          <button type="submit" class="btn-secondary" style="padding:10px 20px; white-space:nowrap;">
+            <i class="fa-solid fa-paper-plane"></i> Notify Me
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" alt="Huzaifa" style="width:40px; height:40px; border-radius:50%; border:2px solid var(--primary);">
+            <h4 style="font-size: 1.2rem; color:var(--heading-color);">Huzaifa Academy</h4>
+          </div>
+          <p>
+            An educational & documentary initiative by Huzaifa exploring science, ancient mysteries, space, and world enigmas in Urdu.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="studio.html">Studio Cinema Player</a></li>
+            <li><a href="documentaries.html">All 14 Documentaries</a></li>
+            <li><a href="wheel.html">Mystery Roulette Wheel</a></li>
+            <li><a href="about.html">About & Mission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Channel Links</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m" target="_blank" rel="noopener noreferrer">YouTube Channel Homepage</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m/videos" target="_blank" rel="noopener noreferrer">All YouTube Videos</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m/about" target="_blank" rel="noopener noreferrer">Channel About Info</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe Directly</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Connect & Follow</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" style="color:#ff0033;"></i> YouTube: @HuzaifaAcademy-z6m</a></li>
+            <li><a href="#home"><i class="fa-solid fa-arrow-up"></i> Back to Top</a></li>
+            <li><a href="wheel.html"><i class="fa-solid fa-dice"></i> Random Mystery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Huzaifa Academy</strong>. All rights reserved. Videos hosted on YouTube.
+        </div>
+        <div>
+          Official YouTube Embed Integration • Guaranteed View Attribution.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="videos-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

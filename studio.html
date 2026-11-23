@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Studio Player | Huzaifa Academy</title>
+  <meta name="description" content="Watch full Urdu documentaries by Huzaifa Academy in our high-definition Cinema Studio player. Every view counts directly on YouTube.">
+  <meta name="keywords" content="Huzaifa Academy, Watch YouTube, Cinema Player, Urdu Documentary, Stonehenge, Great Pyramid">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Visual Elements -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo-custom">
+        <div class="logo-badge-wrap">
+          <div class="logo-animated-ring"></div>
+          <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" alt="Huzaifa Academy Avatar" class="brand-avatar">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            Huzaifa Academy
+            <i class="fa-solid fa-circle-check brand-badge" title="Official Verified YouTube Channel"></i>
+          </span>
+          <span class="brand-tagline">Urdu Documentaries</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="studio.html" class="nav-link active">Studio Player</a></li>
+        <li><a href="documentaries.html" class="nav-link">Documentaries</a></li>
+        <li><a href="wheel.html" class="nav-link">Mystery Wheel</a></li>
+        <li><a href="about.html" class="nav-link">About Channel</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button class="icon-action-btn" id="sound-toggle-btn" aria-label="Toggle sound feedback" title="Sound Effects">
+          <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="icon-action-btn" id="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Switch Theme">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+
+        <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-subscribe">
+          <i class="fa-solid fa-bell"></i>
+          <span>Subscribe</span>
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom: 10px;">
+      <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" style="width:40px; height:40px; border-radius:50%;" alt="Huzaifa">
+      <div>
+        <h4 style="font-size: 1.1rem; color:var(--heading-color);">Huzaifa Academy</h4>
+        <span style="font-size: 0.75rem; color:var(--text-muted);">@HuzaifaAcademy-z6m</span>
+      </div>
+    </div>
+    
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="studio.html" class="mobile-link">Studio Player</a></li>
+      <li><a href="documentaries.html" class="mobile-link">All Documentaries (14)</a></li>
+      <li><a href="wheel.html" class="mobile-link">Mystery Wheel</a></li>
+      <li><a href="about.html" class="mobile-link">About Channel</a></li>
+    </ul>
+
+    <!-- Mobile Theme Switch -->
+    <div class="mobile-theme-row">
+      <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">Appearance</span>
+      <button class="mobile-theme-btn" id="theme-toggle-mobile" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" id="theme-icon-mobile"></i>
+        <span id="theme-text-mobile">Light Mode</span>
+      </button>
+    </div>
+
+    <div style="margin-top: auto;">
+      <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-subscribe" style="width: 100%; justify-content: center;">
+        <i class="fa-solid fa-bell"></i>
+        <span>Subscribe on YouTube</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header-section">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i>
+        <span>Studio Cinema Player</span>
+      </div>
+      <h1 class="page-title">Cinema Studio Stage</h1>
+      <p class="page-desc">
+        Watch all 14 official documentaries in our high-definition embedded studio player. Viewing here registers directly toward YouTube channel views and watch hours.
+      </p>
+    </div>
+  </header>
+
+  <!-- Cinema Studio Player Section -->
+  <main class="cinema-stage-section" id="cinema-stage">
+    <div class="container">
+      
+      <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+        <button class="btn-studio-action" id="studio-theater-btn">
+          <i class="fa-regular fa-lightbulb"></i>
+          <span>Theater Lights</span>
+        </button>
+      </div>
+
+      <div class="studio-grid">
+        <!-- Left: Big Screen Embed Player -->
+        <div class="studio-main">
+          
+          <div class="studio-screen-wrap" id="studio-iframe-wrap">
+            <!-- Official YouTube Embed Player iframe injected by JS -->
+          </div>
+
+          <!-- YouTube View Verification Notice -->
+          <div class="youtube-verified-notice">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Official YouTube IFrame Player Active — Watching here adds direct views & watch-time to YouTube!</span>
+            </div>
+            <span style="font-size: 0.78rem; opacity: 0.85;">
+              <i class="fa-solid fa-shield-halved"></i> 100% Legit YouTube Views
+            </span>
+          </div>
+
+          <!-- Studio Info & Controls -->
+          <div class="studio-info-bar">
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom: 6px;">
+                <span class="card-cat-tag" id="studio-category-badge">Ancient Mystery</span>
+                <span class="meta-dot"></span>
+                <span id="studio-duration-text" style="font-size:0.82rem; color:var(--text-muted);"><i class="fa-regular fa-clock"></i> 8:40</span>
+                <span class="meta-dot"></span>
+                <span id="studio-views-text" style="font-size:0.82rem; color:var(--text-muted);"><i class="fa-solid fa-eye"></i> 45 views</span>
+              </div>
+              <h2 class="studio-now-playing-title" id="studio-now-playing-title">
+                Documentary Title Loading...
+              </h2>
+            </div>
+
+            <div class="studio-controls">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-studio-action btn-studio-youtube" id="studio-youtube-link">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Watch on YouTube</span>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-studio-action" id="studio-comment-link">
+                <i class="fa-solid fa-comments"></i>
+                <span>Comment on YouTube</span>
+              </a>
+              <button class="btn-studio-action" id="studio-share-btn">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>Share</span>
+              </button>
+            </div>
+          </div>
+
+          <p id="studio-synopsis-text" style="color:var(--text-muted); font-size:0.95rem; line-height:1.65;">
+            Detailed documentary synopsis will load here.
+          </p>
+        </div>
+
+        <!-- Right: Studio Playlist Queue -->
+        <div class="studio-queue-wrap">
+          <div class="studio-queue-header">
+            <span class="studio-queue-title">
+              <i class="fa-solid fa-list-ul" style="color:var(--primary);"></i>
+              <span>Documentary Playlist (14)</span>
+            </span>
+            <span style="font-size:0.75rem; color:var(--text-dim);">Click to Stream</span>
+          </div>
+          
+          <div class="queue-items-list" id="studio-queue-list">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Big Promotional Call to Action Banner -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-card">
+        <div class="channel-pill">
+          <i class="fa-brands fa-youtube"></i>
+          <span>Support the Channel</span>
+        </div>
+        <h2 class="promo-title">Enjoying the Documentaries?</h2>
+        <p class="promo-desc">
+          Subscribe to <strong>@HuzaifaAcademy-z6m</strong> directly on YouTube to support the creation of more investigative science & history videos.
+        </p>
+        <a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="subscribe-big-btn">
+          <i class="fa-brands fa-youtube" style="font-size: 1.4rem;"></i>
+          <span>Subscribe to Huzaifa Academy</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="https://yt3.googleusercontent.com/Kfjww7931Jfcm7sRE8ByW-hZJn-0d9a3ZR1ila59oFshCDR14r5p60abzilJa66w-x0Fk0wY=s900-c-k-c0x00ffffff-no-rj" alt="Huzaifa" style="width:40px; height:40px; border-radius:50%; border:2px solid var(--primary);">
+            <h4 style="font-size: 1.2rem; color:var(--heading-color);">Huzaifa Academy</h4>
+          </div>
+          <p>
+            An educational & documentary initiative by Huzaifa exploring science, ancient mysteries, space, and world enigmas in Urdu.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="studio.html">Studio Cinema Player</a></li>
+            <li><a href="documentaries.html">All 14 Documentaries</a></li>
+            <li><a href="wheel.html">Mystery Roulette Wheel</a></li>
+            <li><a href="about.html">About & Mission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Channel Links</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m" target="_blank" rel="noopener noreferrer">YouTube Channel Homepage</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m/videos" target="_blank" rel="noopener noreferrer">All YouTube Videos</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m/about" target="_blank" rel="noopener noreferrer">Channel About Info</a></li>
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe Directly</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Connect & Follow</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@HuzaifaAcademy-z6m" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" style="color:#ff0033;"></i> YouTube: @HuzaifaAcademy-z6m</a></li>
+            <li><a href="documentaries.html"><i class="fa-solid fa-film"></i> Browse Library</a></li>
+            <li><a href="wheel.html"><i class="fa-solid fa-dice"></i> Random Mystery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Huzaifa Academy</strong>. All rights reserved. Videos hosted on YouTube.
+        </div>
+        <div>
+          Official YouTube Embed Integration • Guaranteed View Attribution.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="videos-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
